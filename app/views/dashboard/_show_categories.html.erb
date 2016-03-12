@@ -1,0 +1,16 @@
+<% if @categories.present? %>
+	<% @categories.each do |c|%>
+		<div class="col-md-12">
+			<div class="box box-solid box-primary">
+			<div class="box-header">
+				<!-- / this is categore name -->
+			  <h3 class="box-title">Name : <%= c['Name']%> </h3>
+			</div><!-- /.box-header -->
+			<div class="box-body">		  
+			  Description : <%= c['Description']%><br>
+			  <p class="text-aqua">Link : <%=c['Link']%></p>
+			</div><!-- /.box-body -->
+			</div><!-- /.box -->
+		</div>
+	<% end %>
+<% end %>

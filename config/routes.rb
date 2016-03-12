@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   root 'dashboard#index'
+  post '/submit' => 'dashboard#submit'
   # Example resource route with options:
   #   resources :products do
   #     member do

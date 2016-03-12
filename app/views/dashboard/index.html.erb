@@ -1,7 +1,30 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
-
-
-<button type="button" onclick="addRow()">Click Me!</button>
-
-<script type="text/javascript">
+<body class = "hold-transition skin-blue sidebar-mini">
+  <div class = "">
+    <header class= "main-header">
+      <a href="#" class="logo">
+			  <!-- mini logo for sidebar mini 50x50 pixels -->
+			  <span class="logo-mini"><b>B</b>API</span>
+			  <!-- logo for regular state and mobile devices -->
+			  <span class="logo-lg">BuiltWith API Integration</span>
+			</a>
+			<nav class="navbar navbar-static-top" role="navigation">
+			  <!-- Sidebar toggle button-->
+			  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+			    <span class="sr-only">BuiltWith API Integration</span>
+			  </a>
+			</nav>
+    </header>
+    <div class="pedding_class">
+	    <%= form_tag "/submit",:remote => "true" do %>
+				<div class="input-group">
+				  <input type="text" name="domain" placeholder="Type Your Domain ..." class="form-control">
+				  <span class="input-group-btn">
+				    <input type="submit" name="commit" value="Search" class="btn btn-success btn-flat">
+				  </span>
+				</div>
+			<% end %>
+      <div id="categories" class="pedding_class">
+		  </div>
+		</div>		      
+  </div>
+</body>
